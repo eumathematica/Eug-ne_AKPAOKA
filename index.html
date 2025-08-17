@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
    <meta name="viewport"
-    content="width=1440, initial-scale=1, maximum-scale=1, user-scalable=no">
+    content="width=1280, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EuMathematica - Eugène W.Y AKPAOKA</title>
@@ -14,6 +14,25 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
+   /* Empêche certains navigateurs mobiles d’agrandir le texte */
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+    /* Largeur minimale de la page (ordinateur) */
+    body {
+      margin: 0;
+      min-width: 1280px;               /* largeur "desktop" */
+      font-family: system-ui, Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    /* Conteneur centré avec largeur fixe "desktop" */
+    .app {
+      width: 1280px;                    /* largeur fixe */
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      min-height: 100vh;
+    }
 body { font-family: 'Roboto', sans-serif; background: linear-gradient(180deg, #0f2027, #203a43, #2c5364); color: #fff; scroll-behavior: smooth; }
 nav { position: fixed; top: 0; left: 0; width: 250px; height: 100%; background: #111; padding: 20px; border-right: 2px solid #ff9900; overflow-y: auto; }
 nav h1 { font-size: 1.6rem; text-align: center; margin-bottom: 30px; background: linear-gradient(90deg,#ff9900,#ff3366); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -806,5 +825,6 @@ AOS.init();
 </body>
 
 </html>
+
 
 
